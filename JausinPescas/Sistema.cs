@@ -163,14 +163,5 @@ namespace JausinPescas
             Application.Exit();
         }
 
-        private void iconMax_Click(object sender, EventArgs e)
-        {
-            if (WindowState== FormWindowState.Normal) 
-                WindowState= FormWindowState.Maximized;
-            else
-                WindowState= FormWindowState.Normal;
-        }
-
-
     }
 }

@@ -16,5 +16,10 @@ namespace JausinPescas
         {
             InitializeComponent();
         }
+
+        private void cbAltCategoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -114,5 +114,25 @@ namespace JausinPescas
             cbMarca.Text = " ";
             cbFornecedor.Text = " ";
         }
+
+        private void txtNomeProduto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbMarca_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPrecoVenda_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

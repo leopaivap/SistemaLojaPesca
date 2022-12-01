@@ -39,7 +39,6 @@
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.lblmsgerro = new System.Windows.Forms.Label();
             this.iconMin = new FontAwesome.Sharp.IconButton();
-            this.iconMax = new FontAwesome.Sharp.IconButton();
             this.iconExit = new FontAwesome.Sharp.IconButton();
             this.lblTitleBar = new System.Windows.Forms.Label();
             this.iconCurrent = new FontAwesome.Sharp.IconPictureBox();
@@ -179,7 +178,6 @@
             this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
             this.panelTitleBar.Controls.Add(this.lblmsgerro);
             this.panelTitleBar.Controls.Add(this.iconMin);
-            this.panelTitleBar.Controls.Add(this.iconMax);
             this.panelTitleBar.Controls.Add(this.iconExit);
             this.panelTitleBar.Controls.Add(this.lblTitleBar);
             this.panelTitleBar.Controls.Add(this.iconCurrent);
@@ -207,26 +205,12 @@
             this.iconMin.IconChar = FontAwesome.Sharp.IconChar.Minus;
             this.iconMin.IconColor = System.Drawing.Color.Gainsboro;
             this.iconMin.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconMin.Location = new System.Drawing.Point(818, 31);
+            this.iconMin.Location = new System.Drawing.Point(864, 28);
             this.iconMin.Name = "iconMin";
             this.iconMin.Size = new System.Drawing.Size(35, 35);
             this.iconMin.TabIndex = 4;
             this.iconMin.UseVisualStyleBackColor = true;
             this.iconMin.Click += new System.EventHandler(this.iconMin_Click);
-            // 
-            // iconMax
-            // 
-            this.iconMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconMax.IconChar = FontAwesome.Sharp.IconChar.Square;
-            this.iconMax.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconMax.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconMax.Location = new System.Drawing.Point(870, 31);
-            this.iconMax.Name = "iconMax";
-            this.iconMax.Size = new System.Drawing.Size(29, 28);
-            this.iconMax.TabIndex = 3;
-            this.iconMax.UseVisualStyleBackColor = true;
-            this.iconMax.Click += new System.EventHandler(this.iconMax_Click);
             // 
             // iconExit
             // 
@@ -307,6 +291,7 @@
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
             this.ForeColor = System.Drawing.Color.Gainsboro;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Sistema";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -336,7 +321,6 @@
         private Label lblTitleBar;
         private Panel panelSombra;
         private Panel panelDesktop;
-        private FontAwesome.Sharp.IconButton iconMax;
         private FontAwesome.Sharp.IconButton iconExit;
         private FontAwesome.Sharp.IconButton iconMin;
         private Label lblmsgerro;

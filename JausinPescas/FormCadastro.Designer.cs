@@ -50,6 +50,16 @@
             this.rtxtObsProduto = new System.Windows.Forms.RichTextBox();
             this.iconConfirmaCadastro = new FontAwesome.Sharp.IconButton();
             this.lblmsgerro = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblNomeProduto
@@ -57,7 +67,7 @@
             this.lblNomeProduto.AutoSize = true;
             this.lblNomeProduto.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblNomeProduto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.lblNomeProduto.Location = new System.Drawing.Point(102, 76);
+            this.lblNomeProduto.Location = new System.Drawing.Point(135, 71);
             this.lblNomeProduto.Name = "lblNomeProduto";
             this.lblNomeProduto.Size = new System.Drawing.Size(85, 31);
             this.lblNomeProduto.TabIndex = 0;
@@ -69,7 +79,7 @@
             this.lblQtdEstoque.AutoSize = true;
             this.lblQtdEstoque.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblQtdEstoque.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.lblQtdEstoque.Location = new System.Drawing.Point(102, 127);
+            this.lblQtdEstoque.Location = new System.Drawing.Point(135, 122);
             this.lblQtdEstoque.Name = "lblQtdEstoque";
             this.lblQtdEstoque.Size = new System.Drawing.Size(151, 31);
             this.lblQtdEstoque.TabIndex = 1;
@@ -80,7 +90,7 @@
             this.lblPrecoCusto.AutoSize = true;
             this.lblPrecoCusto.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblPrecoCusto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.lblPrecoCusto.Location = new System.Drawing.Point(102, 180);
+            this.lblPrecoCusto.Location = new System.Drawing.Point(135, 175);
             this.lblPrecoCusto.Name = "lblPrecoCusto";
             this.lblPrecoCusto.Size = new System.Drawing.Size(147, 31);
             this.lblPrecoCusto.TabIndex = 2;
@@ -92,7 +102,7 @@
             this.lblPrecoVenda.AutoSize = true;
             this.lblPrecoVenda.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblPrecoVenda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.lblPrecoVenda.Location = new System.Drawing.Point(102, 236);
+            this.lblPrecoVenda.Location = new System.Drawing.Point(135, 231);
             this.lblPrecoVenda.Name = "lblPrecoVenda";
             this.lblPrecoVenda.Size = new System.Drawing.Size(152, 31);
             this.lblPrecoVenda.TabIndex = 3;
@@ -103,7 +113,7 @@
             this.lblDataValidade.AutoSize = true;
             this.lblDataValidade.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblDataValidade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.lblDataValidade.Location = new System.Drawing.Point(102, 291);
+            this.lblDataValidade.Location = new System.Drawing.Point(135, 286);
             this.lblDataValidade.Name = "lblDataValidade";
             this.lblDataValidade.Size = new System.Drawing.Size(199, 31);
             this.lblDataValidade.TabIndex = 4;
@@ -114,7 +124,7 @@
             this.lblObsProduto.AutoSize = true;
             this.lblObsProduto.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblObsProduto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.lblObsProduto.Location = new System.Drawing.Point(102, 498);
+            this.lblObsProduto.Location = new System.Drawing.Point(135, 493);
             this.lblObsProduto.Name = "lblObsProduto";
             this.lblObsProduto.Size = new System.Drawing.Size(155, 31);
             this.lblObsProduto.TabIndex = 5;
@@ -125,7 +135,7 @@
             this.lblMarca.AutoSize = true;
             this.lblMarca.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblMarca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.lblMarca.Location = new System.Drawing.Point(102, 395);
+            this.lblMarca.Location = new System.Drawing.Point(135, 390);
             this.lblMarca.Name = "lblMarca";
             this.lblMarca.Size = new System.Drawing.Size(86, 31);
             this.lblMarca.TabIndex = 6;
@@ -136,7 +146,7 @@
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.lblCategoria.Location = new System.Drawing.Point(102, 343);
+            this.lblCategoria.Location = new System.Drawing.Point(135, 338);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(123, 31);
             this.lblCategoria.TabIndex = 7;
@@ -147,7 +157,7 @@
             this.lblFornecedor.AutoSize = true;
             this.lblFornecedor.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblFornecedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.lblFornecedor.Location = new System.Drawing.Point(102, 448);
+            this.lblFornecedor.Location = new System.Drawing.Point(135, 443);
             this.lblFornecedor.Name = "lblFornecedor";
             this.lblFornecedor.Size = new System.Drawing.Size(142, 31);
             this.lblFornecedor.TabIndex = 8;
@@ -155,80 +165,93 @@
             // 
             // txtNomeProduto
             // 
-            this.txtNomeProduto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.txtNomeProduto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNomeProduto.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtNomeProduto.Location = new System.Drawing.Point(301, 80);
+            this.txtNomeProduto.BackColor = System.Drawing.Color.White;
+            this.txtNomeProduto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNomeProduto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtNomeProduto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.txtNomeProduto.HideSelection = false;
+            this.txtNomeProduto.Location = new System.Drawing.Point(334, 75);
+            this.txtNomeProduto.Multiline = true;
             this.txtNomeProduto.Name = "txtNomeProduto";
             this.txtNomeProduto.Size = new System.Drawing.Size(425, 27);
             this.txtNomeProduto.TabIndex = 9;
+            this.txtNomeProduto.TextChanged += new System.EventHandler(this.txtNomeProduto_TextChanged);
             // 
             // txtQtdEstoque
             // 
-            this.txtQtdEstoque.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.txtQtdEstoque.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtQtdEstoque.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtQtdEstoque.Location = new System.Drawing.Point(301, 133);
+            this.txtQtdEstoque.BackColor = System.Drawing.Color.White;
+            this.txtQtdEstoque.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtQtdEstoque.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtQtdEstoque.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.txtQtdEstoque.Location = new System.Drawing.Point(334, 128);
             this.txtQtdEstoque.Name = "txtQtdEstoque";
             this.txtQtdEstoque.Size = new System.Drawing.Size(233, 27);
             this.txtQtdEstoque.TabIndex = 10;
             // 
             // txtPrecoCusto
             // 
-            this.txtPrecoCusto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.txtPrecoCusto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPrecoCusto.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtPrecoCusto.Location = new System.Drawing.Point(301, 186);
+            this.txtPrecoCusto.BackColor = System.Drawing.Color.White;
+            this.txtPrecoCusto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPrecoCusto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPrecoCusto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.txtPrecoCusto.Location = new System.Drawing.Point(334, 181);
             this.txtPrecoCusto.Name = "txtPrecoCusto";
             this.txtPrecoCusto.Size = new System.Drawing.Size(233, 27);
             this.txtPrecoCusto.TabIndex = 11;
             // 
             // txtPrecoVenda
             // 
-            this.txtPrecoVenda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.txtPrecoVenda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPrecoVenda.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtPrecoVenda.Location = new System.Drawing.Point(301, 242);
+            this.txtPrecoVenda.BackColor = System.Drawing.Color.White;
+            this.txtPrecoVenda.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPrecoVenda.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPrecoVenda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.txtPrecoVenda.Location = new System.Drawing.Point(334, 237);
             this.txtPrecoVenda.Name = "txtPrecoVenda";
             this.txtPrecoVenda.Size = new System.Drawing.Size(233, 27);
             this.txtPrecoVenda.TabIndex = 12;
+            this.txtPrecoVenda.TextChanged += new System.EventHandler(this.txtPrecoVenda_TextChanged);
             // 
             // txtDataValidade
             // 
-            this.txtDataValidade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.txtDataValidade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDataValidade.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtDataValidade.Location = new System.Drawing.Point(301, 297);
+            this.txtDataValidade.BackColor = System.Drawing.Color.White;
+            this.txtDataValidade.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDataValidade.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDataValidade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.txtDataValidade.Location = new System.Drawing.Point(334, 292);
             this.txtDataValidade.Name = "txtDataValidade";
-            this.txtDataValidade.Size = new System.Drawing.Size(425, 27);
+            this.txtDataValidade.Size = new System.Drawing.Size(233, 27);
             this.txtDataValidade.TabIndex = 13;
             // 
             // cbCategoria
             // 
-            this.cbCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.cbCategoria.ForeColor = System.Drawing.Color.Gainsboro;
+            this.cbCategoria.BackColor = System.Drawing.Color.White;
+            this.cbCategoria.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cbCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
             this.cbCategoria.FormattingEnabled = true;
-            this.cbCategoria.Location = new System.Drawing.Point(301, 349);
+            this.cbCategoria.Location = new System.Drawing.Point(334, 344);
             this.cbCategoria.Name = "cbCategoria";
             this.cbCategoria.Size = new System.Drawing.Size(425, 28);
             this.cbCategoria.TabIndex = 14;
             // 
             // cbMarca
             // 
-            this.cbMarca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.cbMarca.ForeColor = System.Drawing.Color.Gainsboro;
+            this.cbMarca.BackColor = System.Drawing.Color.White;
+            this.cbMarca.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cbMarca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
             this.cbMarca.FormattingEnabled = true;
-            this.cbMarca.Location = new System.Drawing.Point(301, 401);
+            this.cbMarca.Location = new System.Drawing.Point(334, 393);
             this.cbMarca.Name = "cbMarca";
             this.cbMarca.Size = new System.Drawing.Size(425, 28);
             this.cbMarca.TabIndex = 15;
+            this.cbMarca.SelectedIndexChanged += new System.EventHandler(this.cbMarca_SelectedIndexChanged);
             // 
             // cbFornecedor
             // 
-            this.cbFornecedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.cbFornecedor.ForeColor = System.Drawing.Color.Gainsboro;
+            this.cbFornecedor.BackColor = System.Drawing.Color.White;
+            this.cbFornecedor.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cbFornecedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
             this.cbFornecedor.FormattingEnabled = true;
-            this.cbFornecedor.Location = new System.Drawing.Point(301, 454);
+            this.cbFornecedor.Location = new System.Drawing.Point(334, 446);
             this.cbFornecedor.Name = "cbFornecedor";
             this.cbFornecedor.Size = new System.Drawing.Size(425, 28);
             this.cbFornecedor.TabIndex = 16;
@@ -241,12 +264,13 @@
             // 
             // rtxtObsProduto
             // 
-            this.rtxtObsProduto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.rtxtObsProduto.BackColor = System.Drawing.Color.White;
             this.rtxtObsProduto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.rtxtObsProduto.ForeColor = System.Drawing.Color.Gainsboro;
-            this.rtxtObsProduto.Location = new System.Drawing.Point(301, 504);
+            this.rtxtObsProduto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rtxtObsProduto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.rtxtObsProduto.Location = new System.Drawing.Point(334, 499);
             this.rtxtObsProduto.Name = "rtxtObsProduto";
-            this.rtxtObsProduto.Size = new System.Drawing.Size(425, 120);
+            this.rtxtObsProduto.Size = new System.Drawing.Size(425, 82);
             this.rtxtObsProduto.TabIndex = 18;
             this.rtxtObsProduto.Text = "";
             // 
@@ -254,14 +278,14 @@
             // 
             this.iconConfirmaCadastro.AutoSize = true;
             this.iconConfirmaCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.iconConfirmaCadastro.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.iconConfirmaCadastro.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.iconConfirmaCadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
             this.iconConfirmaCadastro.IconChar = FontAwesome.Sharp.IconChar.Check;
             this.iconConfirmaCadastro.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
             this.iconConfirmaCadastro.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconConfirmaCadastro.Location = new System.Drawing.Point(256, 657);
+            this.iconConfirmaCadastro.Location = new System.Drawing.Point(263, 560);
             this.iconConfirmaCadastro.Name = "iconConfirmaCadastro";
-            this.iconConfirmaCadastro.Size = new System.Drawing.Size(278, 72);
+            this.iconConfirmaCadastro.Size = new System.Drawing.Size(227, 56);
             this.iconConfirmaCadastro.TabIndex = 19;
             this.iconConfirmaCadastro.Text = "Confirmar";
             this.iconConfirmaCadastro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -272,20 +296,100 @@
             // 
             this.lblmsgerro.AutoSize = true;
             this.lblmsgerro.ForeColor = System.Drawing.Color.Red;
-            this.lblmsgerro.Location = new System.Drawing.Point(460, 29);
+            this.lblmsgerro.Location = new System.Drawing.Point(494, 24);
             this.lblmsgerro.Name = "lblmsgerro";
-            this.lblmsgerro.Size = new System.Drawing.Size(15, 20);
+            this.lblmsgerro.Size = new System.Drawing.Size(0, 20);
             this.lblmsgerro.TabIndex = 20;
-            this.lblmsgerro.Text = "*";
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.iconConfirmaCadastro);
+            this.panel1.Location = new System.Drawing.Point(86, 35);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(758, 639);
+            this.panel1.TabIndex = 21;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.panel2.Location = new System.Drawing.Point(334, 101);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(425, 1);
+            this.panel2.TabIndex = 22;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.panel3.Location = new System.Drawing.Point(334, 318);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(233, 1);
+            this.panel3.TabIndex = 23;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.panel4.Location = new System.Drawing.Point(334, 371);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(425, 1);
+            this.panel4.TabIndex = 23;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.panel5.Location = new System.Drawing.Point(334, 420);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(425, 1);
+            this.panel5.TabIndex = 23;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.panel6.Location = new System.Drawing.Point(334, 473);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(425, 1);
+            this.panel6.TabIndex = 23;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.panel7.Location = new System.Drawing.Point(334, 207);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(233, 1);
+            this.panel7.TabIndex = 24;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.panel8.Location = new System.Drawing.Point(334, 263);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(233, 1);
+            this.panel8.TabIndex = 25;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.panel9.Location = new System.Drawing.Point(334, 154);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(233, 1);
+            this.panel9.TabIndex = 25;
             // 
             // FormCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(970, 814);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(944, 702);
+            this.Controls.Add(this.panel9);
+            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.lblmsgerro);
-            this.Controls.Add(this.iconConfirmaCadastro);
             this.Controls.Add(this.rtxtObsProduto);
             this.Controls.Add(this.cbFornecedor);
             this.Controls.Add(this.cbMarca);
@@ -304,9 +408,12 @@
             this.Controls.Add(this.lblPrecoCusto);
             this.Controls.Add(this.lblQtdEstoque);
             this.Controls.Add(this.lblNomeProduto);
+            this.Controls.Add(this.panel1);
             this.Name = "FormCadastro";
             this.Text = "FormCadastro";
             this.Load += new System.EventHandler(this.FormCadastro_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -335,5 +442,14 @@
         private RichTextBox rtxtObsProduto;
         private FontAwesome.Sharp.IconButton iconConfirmaCadastro;
         private Label lblmsgerro;
+        private Panel panel1;
+        private Panel panel2;
+        private Panel panel3;
+        private Panel panel4;
+        private Panel panel5;
+        private Panel panel6;
+        private Panel panel7;
+        private Panel panel8;
+        private Panel panel9;
     }
 }
