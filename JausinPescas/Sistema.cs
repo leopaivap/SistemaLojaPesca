@@ -25,10 +25,11 @@ namespace JausinPescas
             this.ControlBox = false;
             this.DoubleBuffered= true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            
         }
 
         //ativar botao pressionado
-        private void ActivateButton(object senderBtn, Color color)
+        public void ActivateButton(object senderBtn, Color color)
         {
             if (senderBtn != null) 
             {
@@ -70,7 +71,7 @@ namespace JausinPescas
         }
 
         //abrir formularios secundarios
-        private void OpenChildForm(Form childForm)
+        public void OpenChildForm(Form childForm)
         {
             if (currentChildForm != null)
             {
@@ -163,5 +164,9 @@ namespace JausinPescas
             Application.Exit();
         }
 
+        private void panelDesktop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

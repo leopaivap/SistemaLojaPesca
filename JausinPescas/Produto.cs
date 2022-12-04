@@ -10,8 +10,10 @@ namespace JausinPescas
     {
         string nome, obsProduto;
         int qntdEstoque, Categoria_codCategoria, Marca_codMarca, Fornecedor_codFornecedor;
-        double precoCusto, precoVenda;
+        decimal precoCusto, precoVenda;
         DateTime dataValidade;
+
+        int codProduto;
 
         public string Nome { get => nome; set => nome = value; }
         public string ObsProduto { get => obsProduto; set => obsProduto = value; }
@@ -19,8 +21,10 @@ namespace JausinPescas
         public int Categoria_codCategoria1 { get => Categoria_codCategoria; set => Categoria_codCategoria = value; }
         public int Marca_codMarca1 { get => Marca_codMarca; set => Marca_codMarca = value; }
         public int Fornecedor_codFornecedor1 { get => Fornecedor_codFornecedor; set => Fornecedor_codFornecedor = value; }
-        public double PrecoCusto { get => precoCusto; set => precoCusto = value; }
-        public double PrecoVenda { get => precoVenda; set => precoVenda = value; }
+
         public DateTime DataValidade { get => dataValidade; set => dataValidade = value; }
+        public int CodProduto { get => codProduto; set => codProduto = value; }
+        public decimal PrecoCusto { get => precoCusto; set => precoCusto = value; }
+        public decimal PrecoVenda { get => precoVenda; set => precoVenda = value; }
     }
 }

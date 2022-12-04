@@ -51,9 +51,13 @@ namespace JausinPescas
             Produto p = new Produto();
             p.Nome = txtNomeProduto.Text;
             p.QntdEstoque = Convert.ToInt32(txtQtdEstoque.Text);
-            p.PrecoCusto = Convert.ToDouble(txtPrecoCusto.Text);
-            p.PrecoVenda = Convert.ToDouble(txtPrecoVenda.Text);
-            p.DataValidade = Convert.ToDateTime(txtDataValidade.Text);
+            p.PrecoCusto = Convert.ToDecimal(txtPrecoCusto.Text);
+            p.PrecoVenda = Convert.ToDecimal(txtPrecoVenda.Text);
+
+            if (txtDataValidade != null)
+                p.DataValidade = Convert.ToDateTime(txtDataValidade.Text);
+            else
+                p.DataValidade = Convert.ToDateTime(null);
             p.Categoria_codCategoria1 = Convert.ToInt32(cbCategoria.SelectedValue.ToString());
             p.Marca_codMarca1 = Convert.ToInt32(cbMarca.SelectedValue.ToString());
             p.Fornecedor_codFornecedor1 = Convert.ToInt32(cbFornecedor.SelectedValue.ToString());
@@ -81,6 +85,7 @@ namespace JausinPescas
             cbCategoria.ValueMember = "codCategoria";
 
             lblmsgerro.Text = con.mensagem;
+            cbCategoria.Text = "";
  
         }
 
@@ -94,6 +99,7 @@ namespace JausinPescas
             cbMarca.ValueMember = "codMarca";
 
             lblmsgerro.Text = con.mensagem;
+            cbMarca.Text = "";
         }
 
         void listaFornecedores()
@@ -106,6 +112,7 @@ namespace JausinPescas
             cbFornecedor.ValueMember = "codFornecedor";
 
             lblmsgerro.Text = con.mensagem;
+            cbFornecedor.Text = "";
         }
 
         private void FormCadastro_Load(object sender, EventArgs e)
@@ -133,6 +140,27 @@ namespace JausinPescas
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void iconAddFornecedor_Click(object sender, EventArgs e)
+        {
+            FormAddFornecedor form = new FormAddFornecedor();
+            form.ShowDialog();
+            listaFornecedores();
+        }
+
+        private void iconAddCategoria_Click(object sender, EventArgs e)
+        {
+            FormAddCategoria form = new FormAddCategoria();
+            form.ShowDialog();
+            listaCategorias();
+        }
+
+        private void iconAddMarca_Click(object sender, EventArgs e)
+        {
+            FormAddMarca form= new FormAddMarca();
+            form.ShowDialog();
+            listaMarcas();
         }
     }
 }

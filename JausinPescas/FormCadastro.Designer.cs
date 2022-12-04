@@ -51,6 +51,9 @@
             this.iconConfirmaCadastro = new FontAwesome.Sharp.IconButton();
             this.lblmsgerro = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.iconAddFornecedor = new FontAwesome.Sharp.IconButton();
+            this.iconAddMarca = new FontAwesome.Sharp.IconButton();
+            this.iconAddCategoria = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -311,6 +314,51 @@
             this.panel1.Size = new System.Drawing.Size(758, 639);
             this.panel1.TabIndex = 21;
             // 
+            // iconAddFornecedor
+            // 
+            this.iconAddFornecedor.FlatAppearance.BorderSize = 0;
+            this.iconAddFornecedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconAddFornecedor.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.iconAddFornecedor.IconColor = System.Drawing.Color.Black;
+            this.iconAddFornecedor.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconAddFornecedor.IconSize = 32;
+            this.iconAddFornecedor.Location = new System.Drawing.Point(781, 446);
+            this.iconAddFornecedor.Name = "iconAddFornecedor";
+            this.iconAddFornecedor.Size = new System.Drawing.Size(22, 28);
+            this.iconAddFornecedor.TabIndex = 26;
+            this.iconAddFornecedor.UseVisualStyleBackColor = true;
+            this.iconAddFornecedor.Click += new System.EventHandler(this.iconAddFornecedor_Click);
+            // 
+            // iconAddMarca
+            // 
+            this.iconAddMarca.FlatAppearance.BorderSize = 0;
+            this.iconAddMarca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconAddMarca.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.iconAddMarca.IconColor = System.Drawing.Color.Black;
+            this.iconAddMarca.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconAddMarca.IconSize = 32;
+            this.iconAddMarca.Location = new System.Drawing.Point(781, 393);
+            this.iconAddMarca.Name = "iconAddMarca";
+            this.iconAddMarca.Size = new System.Drawing.Size(22, 28);
+            this.iconAddMarca.TabIndex = 26;
+            this.iconAddMarca.UseVisualStyleBackColor = true;
+            this.iconAddMarca.Click += new System.EventHandler(this.iconAddMarca_Click);
+            // 
+            // iconAddCategoria
+            // 
+            this.iconAddCategoria.FlatAppearance.BorderSize = 0;
+            this.iconAddCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconAddCategoria.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.iconAddCategoria.IconColor = System.Drawing.Color.Black;
+            this.iconAddCategoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconAddCategoria.IconSize = 32;
+            this.iconAddCategoria.Location = new System.Drawing.Point(781, 344);
+            this.iconAddCategoria.Name = "iconAddCategoria";
+            this.iconAddCategoria.Size = new System.Drawing.Size(22, 28);
+            this.iconAddCategoria.TabIndex = 20;
+            this.iconAddCategoria.UseVisualStyleBackColor = true;
+            this.iconAddCategoria.Click += new System.EventHandler(this.iconAddCategoria_Click);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
@@ -381,6 +429,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(944, 702);
+            this.Controls.Add(this.iconAddFornecedor);
+            this.Controls.Add(this.iconAddMarca);
+            this.Controls.Add(this.iconAddCategoria);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
@@ -451,5 +502,8 @@
         private Panel panel7;
         private Panel panel8;
         private Panel panel9;
+        private FontAwesome.Sharp.IconButton iconAddFornecedor;
+        private FontAwesome.Sharp.IconButton iconAddMarca;
+        private FontAwesome.Sharp.IconButton iconAddCategoria;
     }
 }

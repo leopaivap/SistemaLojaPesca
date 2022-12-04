@@ -95,6 +95,7 @@
             this.btnAlterar.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAlterar.FlatAppearance.BorderSize = 0;
             this.btnAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAlterar.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnAlterar.IconChar = FontAwesome.Sharp.IconChar.FileAlt;
             this.btnAlterar.IconColor = System.Drawing.Color.Gainsboro;
             this.btnAlterar.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -261,13 +262,14 @@
             // 
             // panelDesktop
             // 
-            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelDesktop.BackColor = System.Drawing.Color.White;
             this.panelDesktop.Controls.Add(this.pictureBox1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 84);
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(962, 749);
             this.panelDesktop.TabIndex = 3;
+            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
             // 
             // pictureBox1
             // 
@@ -292,6 +294,7 @@
             this.Controls.Add(this.panelMenu);
             this.ForeColor = System.Drawing.Color.Gainsboro;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.IsMdiContainer = true;
             this.Name = "Sistema";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

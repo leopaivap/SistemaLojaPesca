@@ -36,7 +36,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lblmsgerro = new System.Windows.Forms.Label();
             this.rtxtAltObsProduto = new System.Windows.Forms.RichTextBox();
             this.cbAltFornecedor = new System.Windows.Forms.ComboBox();
             this.cbAltMarca = new System.Windows.Forms.ComboBox();
@@ -56,7 +55,8 @@
             this.lblAltQtdEstoque = new System.Windows.Forms.Label();
             this.lblAltNomeProduto = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.iconConfirmaCadastro = new FontAwesome.Sharp.IconButton();
+            this.lblmsgerro = new System.Windows.Forms.Label();
+            this.iconConfirmaAlteracao = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -125,15 +125,6 @@
             this.panel2.Size = new System.Drawing.Size(425, 1);
             this.panel2.TabIndex = 46;
             // 
-            // lblmsgerro
-            // 
-            this.lblmsgerro.AutoSize = true;
-            this.lblmsgerro.ForeColor = System.Drawing.Color.Red;
-            this.lblmsgerro.Location = new System.Drawing.Point(501, 26);
-            this.lblmsgerro.Name = "lblmsgerro";
-            this.lblmsgerro.Size = new System.Drawing.Size(0, 20);
-            this.lblmsgerro.TabIndex = 44;
-            // 
             // rtxtAltObsProduto
             // 
             this.rtxtAltObsProduto.BackColor = System.Drawing.Color.White;
@@ -190,6 +181,7 @@
             this.txtAltDataValidade.Name = "txtAltDataValidade";
             this.txtAltDataValidade.Size = new System.Drawing.Size(233, 27);
             this.txtAltDataValidade.TabIndex = 39;
+            this.txtAltDataValidade.TextChanged += new System.EventHandler(this.txtAltDataValidade_TextChanged);
             // 
             // txtAltPrecoVenda
             // 
@@ -197,7 +189,7 @@
             this.txtAltPrecoVenda.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAltPrecoVenda.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtAltPrecoVenda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.txtAltPrecoVenda.Location = new System.Drawing.Point(247, 201);
+            this.txtAltPrecoVenda.Location = new System.Drawing.Point(247, 199);
             this.txtAltPrecoVenda.Name = "txtAltPrecoVenda";
             this.txtAltPrecoVenda.Size = new System.Drawing.Size(233, 27);
             this.txtAltPrecoVenda.TabIndex = 38;
@@ -208,7 +200,7 @@
             this.txtAltPrecoCusto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAltPrecoCusto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtAltPrecoCusto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.txtAltPrecoCusto.Location = new System.Drawing.Point(247, 145);
+            this.txtAltPrecoCusto.Location = new System.Drawing.Point(247, 141);
             this.txtAltPrecoCusto.Name = "txtAltPrecoCusto";
             this.txtAltPrecoCusto.Size = new System.Drawing.Size(233, 27);
             this.txtAltPrecoCusto.TabIndex = 37;
@@ -219,7 +211,7 @@
             this.txtAltQtdEstoque.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAltQtdEstoque.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtAltQtdEstoque.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.txtAltQtdEstoque.Location = new System.Drawing.Point(247, 92);
+            this.txtAltQtdEstoque.Location = new System.Drawing.Point(334, 128);
             this.txtAltQtdEstoque.Name = "txtAltQtdEstoque";
             this.txtAltQtdEstoque.Size = new System.Drawing.Size(233, 27);
             this.txtAltQtdEstoque.TabIndex = 36;
@@ -230,7 +222,6 @@
             this.txtAltNomeProduto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAltNomeProduto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtAltNomeProduto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.txtAltNomeProduto.HideSelection = false;
             this.txtAltNomeProduto.Location = new System.Drawing.Point(247, 39);
             this.txtAltNomeProduto.Multiline = true;
             this.txtAltNomeProduto.Name = "txtAltNomeProduto";
@@ -340,33 +331,42 @@
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.txtAltDataValidade);
-            this.panel1.Controls.Add(this.txtAltPrecoVenda);
-            this.panel1.Controls.Add(this.txtAltPrecoCusto);
-            this.panel1.Controls.Add(this.txtAltQtdEstoque);
             this.panel1.Controls.Add(this.txtAltNomeProduto);
-            this.panel1.Controls.Add(this.iconConfirmaCadastro);
+            this.panel1.Controls.Add(this.lblmsgerro);
+            this.panel1.Controls.Add(this.txtAltDataValidade);
+            this.panel1.Controls.Add(this.iconConfirmaAlteracao);
+            this.panel1.Controls.Add(this.txtAltPrecoCusto);
+            this.panel1.Controls.Add(this.txtAltPrecoVenda);
             this.panel1.Location = new System.Drawing.Point(86, 35);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(758, 639);
             this.panel1.TabIndex = 45;
             // 
-            // iconConfirmaCadastro
+            // lblmsgerro
             // 
-            this.iconConfirmaCadastro.AutoSize = true;
-            this.iconConfirmaCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.iconConfirmaCadastro.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.iconConfirmaCadastro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.iconConfirmaCadastro.IconChar = FontAwesome.Sharp.IconChar.Check;
-            this.iconConfirmaCadastro.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.iconConfirmaCadastro.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconConfirmaCadastro.Location = new System.Drawing.Point(263, 560);
-            this.iconConfirmaCadastro.Name = "iconConfirmaCadastro";
-            this.iconConfirmaCadastro.Size = new System.Drawing.Size(227, 56);
-            this.iconConfirmaCadastro.TabIndex = 19;
-            this.iconConfirmaCadastro.Text = "Confirmar";
-            this.iconConfirmaCadastro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconConfirmaCadastro.UseVisualStyleBackColor = true;
+            this.lblmsgerro.AutoSize = true;
+            this.lblmsgerro.Location = new System.Drawing.Point(303, 23);
+            this.lblmsgerro.Name = "lblmsgerro";
+            this.lblmsgerro.Size = new System.Drawing.Size(0, 20);
+            this.lblmsgerro.TabIndex = 40;
+            // 
+            // iconConfirmaAlteracao
+            // 
+            this.iconConfirmaAlteracao.AutoSize = true;
+            this.iconConfirmaAlteracao.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.iconConfirmaAlteracao.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.iconConfirmaAlteracao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.iconConfirmaAlteracao.IconChar = FontAwesome.Sharp.IconChar.Check;
+            this.iconConfirmaAlteracao.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.iconConfirmaAlteracao.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconConfirmaAlteracao.Location = new System.Drawing.Point(193, 564);
+            this.iconConfirmaAlteracao.Name = "iconConfirmaAlteracao";
+            this.iconConfirmaAlteracao.Size = new System.Drawing.Size(366, 56);
+            this.iconConfirmaAlteracao.TabIndex = 19;
+            this.iconConfirmaAlteracao.Text = "Confirmar Alteração";
+            this.iconConfirmaAlteracao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconConfirmaAlteracao.UseVisualStyleBackColor = true;
+            this.iconConfirmaAlteracao.Click += new System.EventHandler(this.iconConfirmaAlteracao_Click);
             // 
             // label1
             // 
@@ -388,6 +388,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
+            this.Controls.Add(this.txtAltQtdEstoque);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.cbAltFornecedor);
@@ -397,7 +398,6 @@
             this.Controls.Add(this.cbAltCategoria);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.lblmsgerro);
             this.Controls.Add(this.rtxtAltObsProduto);
             this.Controls.Add(this.lblAltFornecedor);
             this.Controls.Add(this.lblAltCategoria);
@@ -409,8 +409,12 @@
             this.Controls.Add(this.lblAltQtdEstoque);
             this.Controls.Add(this.lblAltNomeProduto);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormAlterar";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAlterar";
+            this.Load += new System.EventHandler(this.FormAlterar_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -428,7 +432,6 @@
         private Panel panel4;
         private Panel panel3;
         private Panel panel2;
-        private Label lblmsgerro;
         private RichTextBox rtxtAltObsProduto;
         private ComboBox cbAltFornecedor;
         private ComboBox cbAltMarca;
@@ -448,7 +451,8 @@
         private Label lblAltQtdEstoque;
         private Label lblAltNomeProduto;
         private Panel panel1;
-        private FontAwesome.Sharp.IconButton iconConfirmaCadastro;
+        private FontAwesome.Sharp.IconButton iconConfirmaAlteracao;
         private Label label1;
+        private Label lblmsgerro;
     }
 }

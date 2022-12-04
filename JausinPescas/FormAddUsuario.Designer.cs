@@ -1,6 +1,6 @@
 ﻿namespace JausinPescas
 {
-    partial class FormLogin
+    partial class FormAddUsuario
     {
         /// <summary>
         /// Required designer variable.
@@ -28,21 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddUsuario));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.iconConfirmaLogin = new FontAwesome.Sharp.IconButton();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.lblUsuario = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.lblSenha = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.iconCriaConta = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.iconExit = new FontAwesome.Sharp.IconButton();
             this.lblTitleLogin = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.iconConfirmaCadastro = new FontAwesome.Sharp.IconButton();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.txtConfirmaSenha = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -58,64 +60,13 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // iconConfirmaLogin
-            // 
-            this.iconConfirmaLogin.AutoSize = true;
-            this.iconConfirmaLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.iconConfirmaLogin.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.iconConfirmaLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.iconConfirmaLogin.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
-            this.iconConfirmaLogin.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.iconConfirmaLogin.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconConfirmaLogin.IconSize = 32;
-            this.iconConfirmaLogin.Location = new System.Drawing.Point(358, 206);
-            this.iconConfirmaLogin.Name = "iconConfirmaLogin";
-            this.iconConfirmaLogin.Size = new System.Drawing.Size(129, 54);
-            this.iconConfirmaLogin.TabIndex = 20;
-            this.iconConfirmaLogin.Text = "Login";
-            this.iconConfirmaLogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconConfirmaLogin.UseVisualStyleBackColor = true;
-            this.iconConfirmaLogin.Click += new System.EventHandler(this.iconConfirmaLogin_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.panel2.Location = new System.Drawing.Point(240, 260);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(368, 1);
-            this.panel2.TabIndex = 25;
-            // 
-            // txtUsuario
-            // 
-            this.txtUsuario.BackColor = System.Drawing.Color.White;
-            this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsuario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.txtUsuario.HideSelection = false;
-            this.txtUsuario.Location = new System.Drawing.Point(240, 234);
-            this.txtUsuario.Multiline = true;
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(368, 27);
-            this.txtUsuario.TabIndex = 24;
-            // 
-            // lblUsuario
-            // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.lblUsuario.Location = new System.Drawing.Point(94, 230);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(103, 31);
-            this.lblUsuario.TabIndex = 23;
-            this.lblUsuario.Text = "Usuário:";
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.panel1.Location = new System.Drawing.Point(240, 326);
+            this.panel1.Location = new System.Drawing.Point(240, 325);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(368, 1);
-            this.panel1.TabIndex = 28;
+            this.panel1.TabIndex = 37;
             // 
             // txtSenha
             // 
@@ -124,36 +75,68 @@
             this.txtSenha.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
             this.txtSenha.HideSelection = false;
-            this.txtSenha.Location = new System.Drawing.Point(240, 300);
+            this.txtSenha.Location = new System.Drawing.Point(240, 299);
             this.txtSenha.Multiline = true;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(368, 27);
-            this.txtSenha.TabIndex = 27;
+            this.txtSenha.TabIndex = 36;
             // 
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
             this.lblSenha.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.lblSenha.Location = new System.Drawing.Point(94, 296);
+            this.lblSenha.Location = new System.Drawing.Point(94, 295);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(85, 31);
-            this.lblSenha.TabIndex = 26;
+            this.lblSenha.TabIndex = 35;
             this.lblSenha.Text = "Senha:";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.panel2.Location = new System.Drawing.Point(240, 259);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(368, 1);
+            this.panel2.TabIndex = 34;
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.BackColor = System.Drawing.Color.White;
+            this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUsuario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.txtUsuario.HideSelection = false;
+            this.txtUsuario.Location = new System.Drawing.Point(240, 233);
+            this.txtUsuario.Multiline = true;
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(368, 27);
+            this.txtUsuario.TabIndex = 33;
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.lblUsuario.Location = new System.Drawing.Point(94, 229);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(103, 31);
+            this.lblUsuario.TabIndex = 32;
+            this.lblUsuario.Text = "Usuário:";
             // 
             // iconCriaConta
             // 
             this.iconCriaConta.AutoSize = true;
             this.iconCriaConta.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.iconCriaConta.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.iconCriaConta.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.iconCriaConta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
             this.iconCriaConta.IconChar = FontAwesome.Sharp.IconChar.None;
             this.iconCriaConta.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
             this.iconCriaConta.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconCriaConta.Location = new System.Drawing.Point(63, 206);
+            this.iconCriaConta.Location = new System.Drawing.Point(339, 230);
             this.iconCriaConta.Name = "iconCriaConta";
-            this.iconCriaConta.Size = new System.Drawing.Size(218, 54);
+            this.iconCriaConta.Size = new System.Drawing.Size(185, 54);
             this.iconCriaConta.TabIndex = 29;
             this.iconCriaConta.Text = "Crie uma Conta";
             this.iconCriaConta.UseVisualStyleBackColor = true;
@@ -165,10 +148,10 @@
             this.panel3.Controls.Add(this.iconExit);
             this.panel3.Controls.Add(this.lblTitleLogin);
             this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Location = new System.Drawing.Point(0, 2);
+            this.panel3.Location = new System.Drawing.Point(0, 1);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(748, 107);
-            this.panel3.TabIndex = 30;
+            this.panel3.TabIndex = 38;
             // 
             // iconExit
             // 
@@ -179,23 +162,22 @@
             this.iconExit.IconColor = System.Drawing.Color.Gainsboro;
             this.iconExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconExit.IconSize = 29;
-            this.iconExit.Location = new System.Drawing.Point(713, 10);
+            this.iconExit.Location = new System.Drawing.Point(1261, 10);
             this.iconExit.Name = "iconExit";
             this.iconExit.Size = new System.Drawing.Size(23, 19);
             this.iconExit.TabIndex = 32;
             this.iconExit.UseVisualStyleBackColor = true;
-            this.iconExit.Click += new System.EventHandler(this.iconExit_Click);
             // 
             // lblTitleLogin
             // 
             this.lblTitleLogin.AutoSize = true;
             this.lblTitleLogin.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTitleLogin.ForeColor = System.Drawing.Color.White;
-            this.lblTitleLogin.Location = new System.Drawing.Point(303, 29);
+            this.lblTitleLogin.Location = new System.Drawing.Point(277, 29);
             this.lblTitleLogin.Name = "lblTitleLogin";
-            this.lblTitleLogin.Size = new System.Drawing.Size(120, 50);
+            this.lblTitleLogin.Size = new System.Drawing.Size(261, 50);
             this.lblTitleLogin.TabIndex = 32;
-            this.lblTitleLogin.Text = "Login";
+            this.lblTitleLogin.Text = "Novo Usuário";
             // 
             // panel4
             // 
@@ -203,11 +185,10 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.iconCriaConta);
             this.panel4.Controls.Add(this.iconConfirmaCadastro);
-            this.panel4.Controls.Add(this.iconConfirmaLogin);
-            this.panel4.Location = new System.Drawing.Point(83, 187);
+            this.panel4.Location = new System.Drawing.Point(83, 186);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(569, 289);
-            this.panel4.TabIndex = 31;
+            this.panel4.Size = new System.Drawing.Size(569, 294);
+            this.panel4.TabIndex = 39;
             // 
             // iconConfirmaCadastro
             // 
@@ -226,13 +207,49 @@
             this.iconConfirmaCadastro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconConfirmaCadastro.UseVisualStyleBackColor = true;
             // 
-            // FormLogin
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.panel5.Location = new System.Drawing.Point(240, 401);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(368, 1);
+            this.panel5.TabIndex = 40;
+            // 
+            // txtConfirmaSenha
+            // 
+            this.txtConfirmaSenha.BackColor = System.Drawing.Color.White;
+            this.txtConfirmaSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtConfirmaSenha.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtConfirmaSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.txtConfirmaSenha.HideSelection = false;
+            this.txtConfirmaSenha.Location = new System.Drawing.Point(240, 375);
+            this.txtConfirmaSenha.Multiline = true;
+            this.txtConfirmaSenha.Name = "txtConfirmaSenha";
+            this.txtConfirmaSenha.PasswordChar = '*';
+            this.txtConfirmaSenha.Size = new System.Drawing.Size(368, 27);
+            this.txtConfirmaSenha.TabIndex = 39;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.label1.Location = new System.Drawing.Point(94, 358);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(129, 62);
+            this.label1.TabIndex = 38;
+            this.label1.Text = "Confirmar \r\nSenha:";
+            // 
+            // FormAddUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(748, 531);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.txtConfirmaSenha);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.panel2);
@@ -240,10 +257,9 @@
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
-            this.MaximizeBox = false;
-            this.Name = "FormLogin";
+            this.Name = "FormAddUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
+            this.Text = "FormAddUsuario";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -257,18 +273,20 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private FontAwesome.Sharp.IconButton iconConfirmaLogin;
-        private Panel panel2;
-        private TextBox txtUsuario;
-        private Label lblUsuario;
         private Panel panel1;
         private TextBox txtSenha;
         private Label lblSenha;
+        private Panel panel2;
+        private TextBox txtUsuario;
+        private Label lblUsuario;
         private FontAwesome.Sharp.IconButton iconCriaConta;
         private Panel panel3;
+        private FontAwesome.Sharp.IconButton iconExit;
+        private Label lblTitleLogin;
         private Panel panel4;
         private FontAwesome.Sharp.IconButton iconConfirmaCadastro;
-        private Label lblTitleLogin;
-        private FontAwesome.Sharp.IconButton iconExit;
+        private Panel panel5;
+        private TextBox txtConfirmaSenha;
+        private Label label1;
     }
 }

@@ -94,3 +94,8 @@ C:\Users\leona\Documents\Projetos C#\Jausin Pescas Project\JausinPescas\JausinPe
 C:\Users\leona\Documents\Projetos C#\Jausin Pescas Project\JausinPescas\JausinPescas\obj\Debug\net6.0-windows\JausinPescas.pdb
 C:\Users\leona\Documents\Projetos C#\Jausin Pescas Project\JausinPescas\JausinPescas\obj\Debug\net6.0-windows\JausinPescas.genruntimeconfig.cache
 C:\Users\leona\Documents\Projetos C#\Jausin Pescas Project\JausinPescas\JausinPescas\obj\Debug\net6.0-windows\ref\JausinPescas.dll
+C:\Users\leona\Documents\Projetos C#\Jausin Pescas Project\JausinPescas\JausinPescas\obj\Debug\net6.0-windows\JausinPescas.FormAddCategoria.resources
+C:\Users\leona\Documents\Projetos C#\Jausin Pescas Project\JausinPescas\JausinPescas\obj\Debug\net6.0-windows\JausinPescas.FormAddFornecedor.resources
+C:\Users\leona\Documents\Projetos C#\Jausin Pescas Project\JausinPescas\JausinPescas\obj\Debug\net6.0-windows\JausinPescas.FormAddMarca.resources
+C:\Users\leona\Documents\Projetos C#\Jausin Pescas Project\JausinPescas\JausinPescas\obj\Debug\net6.0-windows\JausinPescas.FormAddForn.resources
+C:\Users\leona\Documents\Projetos C#\Jausin Pescas Project\JausinPescas\JausinPescas\obj\Debug\net6.0-windows\JausinPescas.FormAddUsuario.resources
