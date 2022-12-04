@@ -92,5 +92,10 @@ namespace JausinPescas
         {
             (dgProduto.DataSource as DataTable).DefaultView.RowFilter = String.Format("Produto like'{0}%'", txtBusca.Text);
         }
+
+        private void panelDesktop2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

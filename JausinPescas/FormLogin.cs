@@ -20,6 +20,7 @@ namespace JausinPescas
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            txtUsuario.Focus();
         }
 
 

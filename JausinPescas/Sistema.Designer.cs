@@ -44,6 +44,8 @@
             this.iconCurrent = new FontAwesome.Sharp.IconPictureBox();
             this.panelSombra = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.lblNomes = new System.Windows.Forms.Label();
+            this.lblDesenvolvimento = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
@@ -263,6 +265,8 @@
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.White;
+            this.panelDesktop.Controls.Add(this.lblNomes);
+            this.panelDesktop.Controls.Add(this.lblDesenvolvimento);
             this.panelDesktop.Controls.Add(this.pictureBox1);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 84);
@@ -270,6 +274,28 @@
             this.panelDesktop.Size = new System.Drawing.Size(962, 749);
             this.panelDesktop.TabIndex = 3;
             this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
+            // 
+            // lblNomes
+            // 
+            this.lblNomes.AutoSize = true;
+            this.lblNomes.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNomes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.lblNomes.Location = new System.Drawing.Point(3, 684);
+            this.lblNomes.Name = "lblNomes";
+            this.lblNomes.Size = new System.Drawing.Size(228, 62);
+            this.lblNomes.TabIndex = 2;
+            this.lblNomes.Text = "João Luís Cardoso\r\nLeonardo Paiva Pinto";
+            // 
+            // lblDesenvolvimento
+            // 
+            this.lblDesenvolvimento.AutoSize = true;
+            this.lblDesenvolvimento.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDesenvolvimento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.lblDesenvolvimento.Location = new System.Drawing.Point(0, 653);
+            this.lblDesenvolvimento.Name = "lblDesenvolvimento";
+            this.lblDesenvolvimento.Size = new System.Drawing.Size(197, 31);
+            this.lblDesenvolvimento.TabIndex = 1;
+            this.lblDesenvolvimento.Text = "Desenvolvido por:";
             // 
             // pictureBox1
             // 
@@ -306,6 +332,7 @@
             this.panelTitleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrent)).EndInit();
             this.panelDesktop.ResumeLayout(false);
+            this.panelDesktop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -329,5 +356,7 @@
         private Label lblmsgerro;
         private PictureBox pictureBox1;
         public PictureBox btnHome;
+        private Label lblDesenvolvimento;
+        private Label lblNomes;
     }
 }

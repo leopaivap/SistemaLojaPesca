@@ -15,6 +15,7 @@ namespace JausinPescas
         public FormAddUsuario()
         {
             InitializeComponent();
+            txtUsuario.Focus();
         }
 
         private void iconCriaConta_Click(object sender, EventArgs e)

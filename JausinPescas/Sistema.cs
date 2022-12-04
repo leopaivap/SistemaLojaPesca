@@ -12,6 +12,7 @@ namespace JausinPescas
         private Panel leftBorderBtn;
         private Form currentChildForm;
 
+        int idioma = 1; // verifica idioma
 
         public Sistema()
         {
@@ -168,5 +169,11 @@ namespace JausinPescas
         {
 
         }
+
+        public int Idioma()
+        {
+            return idioma;
+        }
+
     }
 }
