@@ -7,12 +7,10 @@ namespace JausinPescas
 {
     public partial class Sistema : Form
     {
-        //Fields
+        //campos atuais
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
-
-        int idioma = 1; // verifica idioma
 
         public Sistema()
         {
@@ -80,7 +78,7 @@ namespace JausinPescas
                 currentChildForm.Close();
             }
 
-
+            //tirar bordas em encaixar no panelDesktop(panel principal)
             currentChildForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle= FormBorderStyle.None;
@@ -89,6 +87,8 @@ namespace JausinPescas
             panelDesktop.Tag= childForm;
             childForm.BringToFront();
             childForm.Show();
+
+            //trocar nome barra de titulo
             lblTitleBar.Text = currentBtn.Text;
         }
 
@@ -97,31 +97,33 @@ namespace JausinPescas
 
         }
 
+
+        //botao cadastro
         private void btnCadastro_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.FromArgb(255, 255, 255));
             OpenChildForm(new FormCadastro());
         }
 
+        //botao listar
         private void btnBusca_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.FromArgb(255, 255, 255));
             OpenChildForm(new FormListar());
         }
 
+        //botao alterar
         private void btnAltera_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.FromArgb(255, 255, 255));
             OpenChildForm(new FormAlterar());
         }
+
+        //botao remover
         private void btnRemover_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.FromArgb(255, 255, 255));
             OpenChildForm(new FormRemover());
-        }
-        private void panelMenu_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         //arrastar pela barra de titulo
@@ -134,6 +136,7 @@ namespace JausinPescas
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+        //fim codigo arrastar pela barra
 
         //botao home
         private void btnHome_Click_1(object sender, EventArgs e)
@@ -141,6 +144,8 @@ namespace JausinPescas
             currentChildForm.Close();
             Reset();
         }
+
+        //voltar para configuracoes padroes
         private void Reset()
         {
             DisableButton();
@@ -150,30 +155,16 @@ namespace JausinPescas
             lblTitleBar.Text = "Página Inicial";
         }
 
-        private void iconPictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        //botao minimizar
         private void iconMin_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
         }
 
+        //botao exit
         private void iconExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
-        private void panelDesktop_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        public int Idioma()
-        {
-            return idioma;
-        }
-
     }
 }

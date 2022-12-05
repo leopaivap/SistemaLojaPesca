@@ -25,7 +25,7 @@ namespace JausinPescas
         void limpaCampos()
         {
             txtNomeProduto.Text = "";
-            txtDataValidade.Text = "";
+            txtDataInsercao.Text = "";
             txtPrecoCusto.Text = "";
             txtQtdEstoque.Text = "";
             txtPrecoVenda.Text = "";
@@ -36,16 +36,7 @@ namespace JausinPescas
             txtNomeProduto.Focus();
         }
 
-        private void lblNomeProduto_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        //botao confima cadastro
         private void iconConfirmaCadastro_Click(object sender, EventArgs e)
         {
             Produto p = new Produto();
@@ -54,10 +45,14 @@ namespace JausinPescas
             p.PrecoCusto = Convert.ToDecimal(txtPrecoCusto.Text);
             p.PrecoVenda = Convert.ToDecimal(txtPrecoVenda.Text);
 
-            if (txtDataValidade != null)
-                p.DataValidade = Convert.ToDateTime(txtDataValidade.Text);
+            if (txtDataInsercao.Text.Equals("") == true)
+                {
+                DateTime anula = new DateTime();
+                p.DataInsercao = anula;
+               }
             else
-                p.DataValidade = Convert.ToDateTime(null);
+                p.DataInsercao = Convert.ToDateTime(txtDataInsercao.Text);
+            
             p.Categoria_codCategoria1 = Convert.ToInt32(cbCategoria.SelectedValue.ToString());
             p.Marca_codMarca1 = Convert.ToInt32(cbMarca.SelectedValue.ToString());
             p.Fornecedor_codFornecedor1 = Convert.ToInt32(cbFornecedor.SelectedValue.ToString());
@@ -122,26 +117,7 @@ namespace JausinPescas
             cbFornecedor.Text = " ";
         }
 
-        private void txtNomeProduto_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cbMarca_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtPrecoVenda_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+        //add fornecedor
         private void iconAddFornecedor_Click(object sender, EventArgs e)
         {
             FormAddFornecedor form = new FormAddFornecedor();
@@ -149,6 +125,7 @@ namespace JausinPescas
             listaFornecedores();
         }
 
+        //add categoria
         private void iconAddCategoria_Click(object sender, EventArgs e)
         {
             FormAddCategoria form = new FormAddCategoria();
@@ -156,6 +133,7 @@ namespace JausinPescas
             listaCategorias();
         }
 
+        //add marca
         private void iconAddMarca_Click(object sender, EventArgs e)
         {
             FormAddMarca form= new FormAddMarca();

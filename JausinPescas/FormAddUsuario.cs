@@ -18,6 +18,7 @@ namespace JausinPescas
             txtUsuario.Focus();
         }
 
+        //botao confima criar conta
         private void iconCriaConta_Click(object sender, EventArgs e)
         {
             ConectaBanco con = new ConectaBanco();
@@ -35,7 +36,7 @@ namespace JausinPescas
                     MessageBox.Show(con.mensagem);
             }
             else
-                MessageBox.Show("Senhas não coincidem!");
+                MessageBox.Show("Senhas não coincidem!"); //nao cria usuario se as senhas nao forem iguais
         }
     }
 }

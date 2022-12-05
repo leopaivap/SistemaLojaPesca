@@ -40,7 +40,7 @@
             this.cbAltFornecedor = new System.Windows.Forms.ComboBox();
             this.cbAltMarca = new System.Windows.Forms.ComboBox();
             this.cbAltCategoria = new System.Windows.Forms.ComboBox();
-            this.txtAltDataValidade = new System.Windows.Forms.TextBox();
+            this.txtAltDataInsercao = new System.Windows.Forms.TextBox();
             this.txtAltPrecoVenda = new System.Windows.Forms.TextBox();
             this.txtAltPrecoCusto = new System.Windows.Forms.TextBox();
             this.txtAltQtdEstoque = new System.Windows.Forms.TextBox();
@@ -49,7 +49,7 @@
             this.lblAltCategoria = new System.Windows.Forms.Label();
             this.lblAltMarca = new System.Windows.Forms.Label();
             this.lblAltObsProduto = new System.Windows.Forms.Label();
-            this.lblAltDataValidade = new System.Windows.Forms.Label();
+            this.lblAltDataInsercao = new System.Windows.Forms.Label();
             this.lblAltPrecoVenda = new System.Windows.Forms.Label();
             this.lblAltPrecoCusto = new System.Windows.Forms.Label();
             this.lblAltQtdEstoque = new System.Windows.Forms.Label();
@@ -169,20 +169,17 @@
             this.cbAltCategoria.Name = "cbAltCategoria";
             this.cbAltCategoria.Size = new System.Drawing.Size(425, 28);
             this.cbAltCategoria.TabIndex = 40;
-            this.cbAltCategoria.SelectedIndexChanged += new System.EventHandler(this.cbAltCategoria_SelectedIndexChanged);
             // 
-            // txtAltDataValidade
+            // txtAltDataInsercao
             // 
-            this.txtAltDataValidade.BackColor = System.Drawing.Color.White;
-            this.txtAltDataValidade.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtAltDataValidade.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtAltDataValidade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.txtAltDataValidade.Location = new System.Drawing.Point(247, 256);
-            this.txtAltDataValidade.Name = "txtAltDataValidade";
-            this.txtAltDataValidade.Size = new System.Drawing.Size(233, 27);
-            this.txtAltDataValidade.TabIndex = 39;
-            this.txtAltDataValidade.TextChanged += new System.EventHandler(this.txtAltDataValidade_TextChanged);
-            // 
+            this.txtAltDataInsercao.BackColor = System.Drawing.Color.White;
+            this.txtAltDataInsercao.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAltDataInsercao.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtAltDataInsercao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.txtAltDataInsercao.Location = new System.Drawing.Point(247, 256);
+            this.txtAltDataInsercao.Name = "txtAltDataInsercao";
+            this.txtAltDataInsercao.Size = new System.Drawing.Size(233, 27);
+            this.txtAltDataInsercao.TabIndex = 39;            // 
             // txtAltPrecoVenda
             // 
             this.txtAltPrecoVenda.BackColor = System.Drawing.Color.White;
@@ -272,16 +269,16 @@
             this.lblAltObsProduto.TabIndex = 31;
             this.lblAltObsProduto.Text = "Obs Produto:";
             // 
-            // lblAltDataValidade
+            // lblAltDataInsercao
             // 
-            this.lblAltDataValidade.AutoSize = true;
-            this.lblAltDataValidade.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblAltDataValidade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.lblAltDataValidade.Location = new System.Drawing.Point(135, 286);
-            this.lblAltDataValidade.Name = "lblAltDataValidade";
-            this.lblAltDataValidade.Size = new System.Drawing.Size(199, 31);
-            this.lblAltDataValidade.TabIndex = 30;
-            this.lblAltDataValidade.Text = "Data de Validade:";
+            this.lblAltDataInsercao.AutoSize = true;
+            this.lblAltDataInsercao.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblAltDataInsercao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.lblAltDataInsercao.Location = new System.Drawing.Point(135, 286);
+            this.lblAltDataInsercao.Name = "lblAltDataInsercao";
+            this.lblAltDataInsercao.Size = new System.Drawing.Size(103, 31);
+            this.lblAltDataInsercao.TabIndex = 30;
+            this.lblAltDataInsercao.Text = "Inserção";
             // 
             // lblAltPrecoVenda
             // 
@@ -333,7 +330,7 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.txtAltNomeProduto);
             this.panel1.Controls.Add(this.lblmsgerro);
-            this.panel1.Controls.Add(this.txtAltDataValidade);
+            this.panel1.Controls.Add(this.txtAltDataInsercao);
             this.panel1.Controls.Add(this.iconConfirmaAlteracao);
             this.panel1.Controls.Add(this.txtAltPrecoCusto);
             this.panel1.Controls.Add(this.txtAltPrecoVenda);
@@ -403,7 +400,7 @@
             this.Controls.Add(this.lblAltCategoria);
             this.Controls.Add(this.lblAltMarca);
             this.Controls.Add(this.lblAltObsProduto);
-            this.Controls.Add(this.lblAltDataValidade);
+            this.Controls.Add(this.lblAltDataInsercao);
             this.Controls.Add(this.lblAltPrecoVenda);
             this.Controls.Add(this.lblAltPrecoCusto);
             this.Controls.Add(this.lblAltQtdEstoque);
@@ -436,7 +433,7 @@
         private ComboBox cbAltFornecedor;
         private ComboBox cbAltMarca;
         private ComboBox cbAltCategoria;
-        private TextBox txtAltDataValidade;
+        private TextBox txtAltDataInsercao;
         private TextBox txtAltPrecoVenda;
         private TextBox txtAltPrecoCusto;
         private TextBox txtAltQtdEstoque;
@@ -445,7 +442,7 @@
         private Label lblAltCategoria;
         private Label lblAltMarca;
         private Label lblAltObsProduto;
-        private Label lblAltDataValidade;
+        private Label lblAltDataInsercao;
         private Label lblAltPrecoVenda;
         private Label lblAltPrecoCusto;
         private Label lblAltQtdEstoque;

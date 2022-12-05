@@ -33,7 +33,7 @@
             this.lblQtdEstoque = new System.Windows.Forms.Label();
             this.lblPrecoCusto = new System.Windows.Forms.Label();
             this.lblPrecoVenda = new System.Windows.Forms.Label();
-            this.lblDataValidade = new System.Windows.Forms.Label();
+            this.lblDataInsercao = new System.Windows.Forms.Label();
             this.lblObsProduto = new System.Windows.Forms.Label();
             this.lblMarca = new System.Windows.Forms.Label();
             this.lblCategoria = new System.Windows.Forms.Label();
@@ -42,7 +42,7 @@
             this.txtQtdEstoque = new System.Windows.Forms.TextBox();
             this.txtPrecoCusto = new System.Windows.Forms.TextBox();
             this.txtPrecoVenda = new System.Windows.Forms.TextBox();
-            this.txtDataValidade = new System.Windows.Forms.TextBox();
+            this.txtDataInsercao = new System.Windows.Forms.TextBox();
             this.cbCategoria = new System.Windows.Forms.ComboBox();
             this.cbMarca = new System.Windows.Forms.ComboBox();
             this.cbFornecedor = new System.Windows.Forms.ComboBox();
@@ -75,7 +75,6 @@
             this.lblNomeProduto.Size = new System.Drawing.Size(85, 31);
             this.lblNomeProduto.TabIndex = 0;
             this.lblNomeProduto.Text = "Nome:";
-            this.lblNomeProduto.Click += new System.EventHandler(this.lblNomeProduto_Click);
             // 
             // lblQtdEstoque
             // 
@@ -98,7 +97,6 @@
             this.lblPrecoCusto.Size = new System.Drawing.Size(147, 31);
             this.lblPrecoCusto.TabIndex = 2;
             this.lblPrecoCusto.Text = "Preço Custo:";
-            this.lblPrecoCusto.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblPrecoVenda
             // 
@@ -111,16 +109,16 @@
             this.lblPrecoVenda.TabIndex = 3;
             this.lblPrecoVenda.Text = "Preço Venda:";
             // 
-            // lblDataValidade
+            // lblDataInsercao
             // 
-            this.lblDataValidade.AutoSize = true;
-            this.lblDataValidade.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblDataValidade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.lblDataValidade.Location = new System.Drawing.Point(135, 286);
-            this.lblDataValidade.Name = "lblDataValidade";
-            this.lblDataValidade.Size = new System.Drawing.Size(199, 31);
-            this.lblDataValidade.TabIndex = 4;
-            this.lblDataValidade.Text = "Data de Validade:";
+            this.lblDataInsercao.AutoSize = true;
+            this.lblDataInsercao.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDataInsercao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.lblDataInsercao.Location = new System.Drawing.Point(135, 286);
+            this.lblDataInsercao.Name = "lblDataInsercao";
+            this.lblDataInsercao.Size = new System.Drawing.Size(197, 31);
+            this.lblDataInsercao.TabIndex = 4;
+            this.lblDataInsercao.Text = "Data de Inserção:";
             // 
             // lblObsProduto
             // 
@@ -178,7 +176,6 @@
             this.txtNomeProduto.Name = "txtNomeProduto";
             this.txtNomeProduto.Size = new System.Drawing.Size(425, 27);
             this.txtNomeProduto.TabIndex = 9;
-            this.txtNomeProduto.TextChanged += new System.EventHandler(this.txtNomeProduto_TextChanged);
             // 
             // txtQtdEstoque
             // 
@@ -212,18 +209,17 @@
             this.txtPrecoVenda.Name = "txtPrecoVenda";
             this.txtPrecoVenda.Size = new System.Drawing.Size(233, 27);
             this.txtPrecoVenda.TabIndex = 12;
-            this.txtPrecoVenda.TextChanged += new System.EventHandler(this.txtPrecoVenda_TextChanged);
             // 
-            // txtDataValidade
+            // txtDataInsercao
             // 
-            this.txtDataValidade.BackColor = System.Drawing.Color.White;
-            this.txtDataValidade.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDataValidade.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtDataValidade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
-            this.txtDataValidade.Location = new System.Drawing.Point(334, 292);
-            this.txtDataValidade.Name = "txtDataValidade";
-            this.txtDataValidade.Size = new System.Drawing.Size(233, 27);
-            this.txtDataValidade.TabIndex = 13;
+            this.txtDataInsercao.BackColor = System.Drawing.Color.White;
+            this.txtDataInsercao.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDataInsercao.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDataInsercao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));
+            this.txtDataInsercao.Location = new System.Drawing.Point(334, 292);
+            this.txtDataInsercao.Name = "txtDataInsercao";
+            this.txtDataInsercao.Size = new System.Drawing.Size(233, 27);
+            this.txtDataInsercao.TabIndex = 13;
             // 
             // cbCategoria
             // 
@@ -246,7 +242,6 @@
             this.cbMarca.Name = "cbMarca";
             this.cbMarca.Size = new System.Drawing.Size(425, 28);
             this.cbMarca.TabIndex = 15;
-            this.cbMarca.SelectedIndexChanged += new System.EventHandler(this.cbMarca_SelectedIndexChanged);
             // 
             // cbFornecedor
             // 
@@ -445,7 +440,7 @@
             this.Controls.Add(this.cbFornecedor);
             this.Controls.Add(this.cbMarca);
             this.Controls.Add(this.cbCategoria);
-            this.Controls.Add(this.txtDataValidade);
+            this.Controls.Add(this.txtDataInsercao);
             this.Controls.Add(this.txtPrecoVenda);
             this.Controls.Add(this.txtPrecoCusto);
             this.Controls.Add(this.txtQtdEstoque);
@@ -454,7 +449,7 @@
             this.Controls.Add(this.lblCategoria);
             this.Controls.Add(this.lblMarca);
             this.Controls.Add(this.lblObsProduto);
-            this.Controls.Add(this.lblDataValidade);
+            this.Controls.Add(this.lblDataInsercao);
             this.Controls.Add(this.lblPrecoVenda);
             this.Controls.Add(this.lblPrecoCusto);
             this.Controls.Add(this.lblQtdEstoque);
@@ -476,7 +471,7 @@
         private Label lblQtdEstoque;
         private Label lblPrecoCusto;
         private Label lblPrecoVenda;
-        private Label lblDataValidade;
+        private Label lblDataInsercao;
         private Label lblObsProduto;
         private Label lblMarca;
         private Label lblCategoria;
@@ -485,7 +480,7 @@
         private TextBox txtQtdEstoque;
         private TextBox txtPrecoCusto;
         private TextBox txtPrecoVenda;
-        private TextBox txtDataValidade;
+        private TextBox txtDataInsercao;
         private ComboBox cbCategoria;
         private ComboBox cbMarca;
         private ComboBox cbFornecedor;

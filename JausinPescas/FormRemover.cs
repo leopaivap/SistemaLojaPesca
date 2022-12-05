@@ -17,11 +17,7 @@ namespace JausinPescas
             InitializeComponent();
         }
 
-        private void lblRemover_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        //botao cofirmar remover
         private void iconConfirmaRemover_Click(object sender, EventArgs e)
         {
             DialogResult resp = MessageBox.Show("Confirma exclusão?", "Remover Produto", MessageBoxButtons.OKCancel);

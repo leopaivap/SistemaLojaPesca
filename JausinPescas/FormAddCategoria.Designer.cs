@@ -112,9 +112,7 @@
             this.lblAddCategoria.Name = "lblAddCategoria";
             this.lblAddCategoria.Size = new System.Drawing.Size(237, 41);
             this.lblAddCategoria.TabIndex = 46;
-            this.lblAddCategoria.Text = "Nova Categoria";
-            this.lblAddCategoria.Click += new System.EventHandler(this.lblRemover_Click);
-            // 
+            this.lblAddCategoria.Text = "Nova Categoria";            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(36)))));

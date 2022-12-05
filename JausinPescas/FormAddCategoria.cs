@@ -17,11 +17,7 @@ namespace JausinPescas
             InitializeComponent();
         }
 
-        private void lblRemover_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        //botao confirma cadastro marca
         private void iconConfirmaCadastro_Click(object sender, EventArgs e)
         {
            

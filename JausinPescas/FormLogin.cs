@@ -16,6 +16,7 @@ namespace JausinPescas
         {
             InitializeComponent();
 
+            //tirar borda api
             this.Text = string.Empty;
             this.ControlBox = false;
             this.DoubleBuffered = true;
@@ -24,16 +25,13 @@ namespace JausinPescas
         }
 
 
-        private void txtNomeProduto_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        //botao exit
         private void iconExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        //botao confimar login
         private void iconConfirmaLogin_Click(object sender, EventArgs e)
         {
             ConectaBanco con = new ConectaBanco();
@@ -48,6 +46,7 @@ namespace JausinPescas
                 MessageBox.Show("Usuário ou senha incorreto(s)!" + con.mensagem);
         }
 
+        //botao criar conta
         private void iconCriaConta_Click(object sender, EventArgs e)
         {
             FormAddUsuario form = new FormAddUsuario();

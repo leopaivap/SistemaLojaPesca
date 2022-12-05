@@ -9,6 +9,8 @@ namespace JausinPescas
 {
     internal class Biblioteca
     {
+
+        //funcao para criptografar para codigo HASH
         public static string makeHash(string rawData)
         {
             // Create a SHA256  

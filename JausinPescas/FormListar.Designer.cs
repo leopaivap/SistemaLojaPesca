@@ -150,7 +150,6 @@
             this.panelDesktop2.Name = "panelDesktop2";
             this.panelDesktop2.Size = new System.Drawing.Size(949, 705);
             this.panelDesktop2.TabIndex = 56;
-            this.panelDesktop2.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop2_Paint);
             // 
             // panel3
             // 

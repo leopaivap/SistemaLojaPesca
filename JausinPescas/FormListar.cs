@@ -30,6 +30,7 @@ namespace JausinPescas
             listaProduto();
         }
 
+        //botao alterar
         private void iconAltera_Click(object sender, EventArgs e)
         {
             Produto p = new Produto();
@@ -37,7 +38,7 @@ namespace JausinPescas
             int linha = dgProduto.CurrentRow.Index;
             p.CodProduto = Convert.ToInt32(dgProduto.Rows[linha].Cells["Código"].Value.ToString());
             p.Nome = dgProduto.Rows[linha].Cells["Produto"].Value.ToString();
-            p.DataValidade = Convert.ToDateTime(dgProduto.Rows[linha].Cells["Data de Validade"].Value.ToString());
+            p.DataInsercao = Convert.ToDateTime(dgProduto.Rows[linha].Cells["Data de Inserção"].Value.ToString());
             p.PrecoCusto = Convert.ToDecimal(dgProduto.Rows[linha].Cells["Preço de Custo"].Value.ToString());
             p.PrecoCusto = Convert.ToDecimal(dgProduto.Rows[linha].Cells["Preço de Venda"].Value.ToString());
             p.QntdEstoque = Convert.ToInt32(dgProduto.Rows[linha].Cells["Quantidade no Estoque"].Value.ToString());
@@ -46,15 +47,17 @@ namespace JausinPescas
             forn = dgProduto.Rows[linha].Cells["Fornecedor"].Value.ToString();
             p.ObsProduto = dgProduto.Rows[linha].Cells["Observações"].Value.ToString();
 
-            //string nome, int qtd, double precoCusto, double precoVenda, DateTime dataValidade, string categoria, string marca, string fornecedor, string obs
-            FormAlterar form = new FormAlterar(p.Nome, p.QntdEstoque, p.PrecoCusto, p.PrecoVenda, p.DataValidade, cat, mar, forn, p.ObsProduto, p.CodProduto);
+            // Valores segundo construtor form alterar: string nome, int qtd, double precoCusto, double precoVenda, DateTime dataValidade, string categoria, string marca, string fornecedor, string obs
+            FormAlterar form = new FormAlterar(p.Nome, p.QntdEstoque, p.PrecoCusto, p.PrecoVenda, p.DataInsercao, cat, mar, forn, p.ObsProduto, p.CodProduto);
 
-              //Sistema sis = new Sistema();
-             // sis.OpenChildForm(new FormAlterar(p.Nome, p.QntdEstoque, p.PrecoCusto, p.PrecoVenda, p.DataValidade, cat, mar, forn, p.ObsProduto, p.CodProduto));
 
-           // dgProduto.Visible = false;
-           // iconAltera.Visible = false;
-           // iconRemove.Visible = false;
+            //codigos teste abrir segundo alterar dentro do form principal: ainda em desenvolvimento
+            //Sistema sis = new Sistema();
+            // sis.OpenChildForm(new FormAlterar(p.Nome, p.QntdEstoque, p.PrecoCusto, p.PrecoVenda, p.DataValidade, cat, mar, forn, p.ObsProduto, p.CodProduto));
+
+            // dgProduto.Visible = false;
+            // iconAltera.Visible = false;
+            // iconRemove.Visible = false;
             //lblTitleListar.Visible = false;
 
            // form.TopLevel = false;
@@ -63,11 +66,12 @@ namespace JausinPescas
            // panelDesktop2.Controls.Add(form);
            // panelDesktop2.Tag = form;
            // form.BringToFront();
+
             form.Show();
-
-
+            listaProduto();
         }
 
+        //botao remover
         private void iconRemove_Click(object sender, EventArgs e)
         {
             int linha = dgProduto.CurrentRow.Index;
@@ -88,14 +92,10 @@ namespace JausinPescas
                 MessageBox.Show("Operação Cancelada!");
         }
 
+        //filtro por nome do produto
         private void txtBusca_TextChanged(object sender, EventArgs e)
         {
             (dgProduto.DataSource as DataTable).DefaultView.RowFilter = String.Format("Produto like'{0}%'", txtBusca.Text);
-        }
-
-        private void panelDesktop2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

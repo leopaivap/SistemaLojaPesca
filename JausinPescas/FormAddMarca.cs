@@ -17,6 +17,7 @@ namespace JausinPescas
             InitializeComponent();
         }
 
+        //botao confirma cadastro marca
         private void iconConfirmaCadastro_Click(object sender, EventArgs e)
         {
             ConectaBanco conecta = new ConectaBanco();

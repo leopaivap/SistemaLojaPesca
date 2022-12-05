@@ -98,7 +98,7 @@ namespace JausinPescas
             cmd.Parameters.AddWithValue("qntdEstoque", p.QntdEstoque);
             cmd.Parameters.AddWithValue("precoCusto", p.PrecoCusto);
             cmd.Parameters.AddWithValue("precoVenda", p.PrecoVenda);
-            cmd.Parameters.AddWithValue("dataValidade", p.DataValidade.ToString("yyyy-MM-dd"));
+            cmd.Parameters.AddWithValue("dataInsercao", p.DataInsercao.ToString("yyyy-MM-dd"));
             cmd.Parameters.AddWithValue("obsProduto", p.ObsProduto);
             cmd.Parameters.AddWithValue("Categoria_codCategoria", p.Categoria_codCategoria1);
             cmd.Parameters.AddWithValue("Marca_codMarca", p.Marca_codMarca1);
@@ -179,7 +179,7 @@ namespace JausinPescas
             cmd.Parameters.AddWithValue("qntdEstoque", p.QntdEstoque);
             cmd.Parameters.AddWithValue("precoCusto", p.PrecoCusto);
             cmd.Parameters.AddWithValue("precoVenda", p.PrecoVenda);
-            cmd.Parameters.AddWithValue("dataValidade", p.DataValidade.Date.ToString("yyyy-MM-dd"));
+            cmd.Parameters.AddWithValue("dataInsercao", p.DataInsercao.Date.ToString("yyyy-MM-dd"));
             cmd.Parameters.AddWithValue("obsProduto", p.ObsProduto);
             cmd.Parameters.AddWithValue("Categoria_codCategoria", p.Categoria_codCategoria1);
             cmd.Parameters.AddWithValue("Marca_codMarca", p.Marca_codMarca1);

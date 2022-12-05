@@ -63,7 +63,6 @@
             this.lblRemover.Size = new System.Drawing.Size(335, 41);
             this.lblRemover.TabIndex = 46;
             this.lblRemover.Text = "Selecione um Produto:";
-            this.lblRemover.Click += new System.EventHandler(this.lblRemover_Click);
             // 
             // panel1
             // 

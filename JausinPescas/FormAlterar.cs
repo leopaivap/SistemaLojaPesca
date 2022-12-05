@@ -19,11 +19,12 @@ namespace JausinPescas
             listaFornecedores();
             listaMarcas();
 
+            //desativa campos se produto a ser alterado nao estiver selecionado previamente
             txtAltNomeProduto.Enabled= false;
             txtAltQtdEstoque.Enabled= false;
             txtAltPrecoCusto.Enabled= false;
             txtAltPrecoVenda.Enabled= false;   
-            txtAltDataValidade.Enabled= false;
+            txtAltDataInsercao.Enabled= false;
             cbAltCategoria.Enabled= false;
             cbAltFornecedor.Enabled= false;
             cbAltMarca.Enabled= false; 
@@ -32,14 +33,14 @@ namespace JausinPescas
         }
 
         int idAltera = 0;
-        public FormAlterar(string nome, int qtd, decimal precoCusto, decimal precoVenda, DateTime dataValidade, string categoria, string marca, string fornecedor, string obs, int idAlterar)
+        public FormAlterar(string nome, int qtd, decimal precoCusto, decimal precoVenda, DateTime dataInsercao, string categoria, string marca, string fornecedor, string obs, int idAlterar)
         {
             InitializeComponent();
             txtAltNomeProduto.Text = nome;
             txtAltQtdEstoque.Text = Convert.ToString(qtd);
             txtAltPrecoCusto.Text = Convert.ToString(precoCusto);
             txtAltPrecoVenda.Text = Convert.ToString(precoVenda);
-            txtAltDataValidade.Text = Convert.ToString(dataValidade);
+            txtAltDataInsercao.Text = Convert.ToString(dataInsercao);
             cbAltCategoria.Text = categoria;
             cbAltMarca.Text = marca;
             cbAltFornecedor.Text = fornecedor;
@@ -89,11 +90,6 @@ namespace JausinPescas
             lblmsgerro.Text = con.mensagem;
         }
 
-        private void cbAltCategoria_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void FormAlterar_Load(object sender, EventArgs e)
         {
             if (idAltera == 0)
@@ -106,12 +102,13 @@ namespace JausinPescas
             }
         }
 
+        //botao confirma alteracao
         private void iconConfirmaAlteracao_Click(object sender, EventArgs e)
         {
             Produto p = new Produto();
             p.Nome = txtAltNomeProduto.Text;
             p.QntdEstoque = Convert.ToInt32(txtAltQtdEstoque.Text);
-            p.DataValidade = Convert.ToDateTime(txtAltDataValidade.Text);
+            p.DataInsercao = Convert.ToDateTime(txtAltDataInsercao.Text);
             p.PrecoCusto = Convert.ToDecimal(txtAltPrecoCusto.Text);
             p.PrecoVenda = Convert.ToDecimal(txtAltPrecoVenda.Text);
             p.ObsProduto = rtxtAltObsProduto.Text;
@@ -132,13 +129,6 @@ namespace JausinPescas
             }
             else
                 lblmsgerro.Text = con.mensagem;
-
-           
-        }
-
-        private void txtAltDataValidade_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
     }
