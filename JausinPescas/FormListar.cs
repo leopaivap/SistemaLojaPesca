@@ -40,7 +40,7 @@ namespace JausinPescas
             p.Nome = dgProduto.Rows[linha].Cells["Produto"].Value.ToString();
             p.DataInsercao = Convert.ToDateTime(dgProduto.Rows[linha].Cells["Data de Inserção"].Value.ToString());
             p.PrecoCusto = Convert.ToDecimal(dgProduto.Rows[linha].Cells["Preço de Custo"].Value.ToString());
-            p.PrecoCusto = Convert.ToDecimal(dgProduto.Rows[linha].Cells["Preço de Venda"].Value.ToString());
+            p.PrecoVenda = Convert.ToDecimal(dgProduto.Rows[linha].Cells["Preço de Venda"].Value.ToString());
             p.QntdEstoque = Convert.ToInt32(dgProduto.Rows[linha].Cells["Quantidade no Estoque"].Value.ToString());
             cat = dgProduto.Rows[linha].Cells["Categoria"].Value.ToString();
             mar = dgProduto.Rows[linha].Cells["Marca"].Value.ToString();
@@ -67,7 +67,7 @@ namespace JausinPescas
            // panelDesktop2.Tag = form;
            // form.BringToFront();
 
-            form.Show();
+            form.ShowDialog();
             listaProduto();
         }
 
