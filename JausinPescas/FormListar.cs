@@ -36,16 +36,16 @@ namespace JausinPescas
             Produto p = new Produto();
             string cat, mar, forn;
             int linha = dgProduto.CurrentRow.Index;
-            p.CodProduto = Convert.ToInt32(dgProduto.Rows[linha].Cells["Código"].Value.ToString());
+            p.CodProduto = Convert.ToInt32(dgProduto.Rows[linha].Cells["Codigo"].Value.ToString());
             p.Nome = dgProduto.Rows[linha].Cells["Produto"].Value.ToString();
-            p.DataInsercao = Convert.ToDateTime(dgProduto.Rows[linha].Cells["Data de Inserção"].Value.ToString());
-            p.PrecoCusto = Convert.ToDecimal(dgProduto.Rows[linha].Cells["Preço de Custo"].Value.ToString());
-            p.PrecoVenda = Convert.ToDecimal(dgProduto.Rows[linha].Cells["Preço de Venda"].Value.ToString());
+            p.DataInsercao = Convert.ToDateTime(dgProduto.Rows[linha].Cells["Data de Insercao"].Value.ToString());
+            p.PrecoCusto = Convert.ToDecimal(dgProduto.Rows[linha].Cells["Preco de Custo"].Value.ToString());
+            p.PrecoVenda = Convert.ToDecimal(dgProduto.Rows[linha].Cells["Preco de Venda"].Value.ToString());
             p.QntdEstoque = Convert.ToInt32(dgProduto.Rows[linha].Cells["Quantidade no Estoque"].Value.ToString());
             cat = dgProduto.Rows[linha].Cells["Categoria"].Value.ToString();
             mar = dgProduto.Rows[linha].Cells["Marca"].Value.ToString();
             forn = dgProduto.Rows[linha].Cells["Fornecedor"].Value.ToString();
-            p.ObsProduto = dgProduto.Rows[linha].Cells["Observações"].Value.ToString();
+            p.ObsProduto = dgProduto.Rows[linha].Cells["Observacoes"].Value.ToString();
 
             // Valores segundo construtor form alterar: string nome, int qtd, double precoCusto, double precoVenda, DateTime dataValidade, string categoria, string marca, string fornecedor, string obs
             FormAlterar form = new FormAlterar(p.Nome, p.QntdEstoque, p.PrecoCusto, p.PrecoVenda, p.DataInsercao, cat, mar, forn, p.ObsProduto, p.CodProduto);

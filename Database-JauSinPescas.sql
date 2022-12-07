@@ -168,7 +168,7 @@ DROP PROCEDURE IF EXISTS `lista_produtos`;
 DELIMITER //
 CREATE PROCEDURE `lista_produtos`()
 BEGIN
-	select codProduto as "Código", nomeProduto as "Produto", qntdEstoque as "Quantidade no Estoque", precoCusto as "Preço de Custo", precoVenda as "Preço de Venda", date_format(dataInsercao, "%d/%m/%Y") as "Data de Inserção", obsProduto as "Observações", categoria.Tipo as "Categoria", marca.nomeMarca as "Marca", fornecedor.nome as "Fornecedor" from produto
+	select codProduto as "Codigo", nomeProduto as "Produto", qntdEstoque as "Quantidade no Estoque", precoCusto as "Preco de Custo", precoVenda as "Preco de Venda", date_format(dataInsercao, "%d/%m/%Y") as "Data de Insercao", obsProduto as "Observacoes", categoria.Tipo as "Categoria", marca.nomeMarca as "Marca", fornecedor.nome as "Fornecedor" from produto
 	inner join categoria on Categoria_codCategoria = categoria.codCategoria
 	inner join marca on Marca_codMarca = marca.codMarca
 	inner join fornecedor on Fornecedor_codFornecedor = fornecedor.codFornecedor;
@@ -276,7 +276,7 @@ INSERT INTO `produto` (`codProduto`, `nomeProduto`, `qntdEstoque`, `precoCusto`,
 	(16, 'Molinete Médio', 22, 40.00, 70.00, '2022-08-26', 'molinetes de médio porte que utilizam linhas entre 0,30mm a 0,40mm.', 9, 5, 4),
 	(17, 'Molinete de fibra de carbono', 5, 200.00, 300.00, '2022-06-22', 'Molinete altamente resistente ', 9, 4, 6),
 	(18, 'Maruseigo', 40, 20.00, 35.00, '2022-01-10', 'Esse tipo de anzol também pode ser utilizado na confecção dos jig heads', 11, 4, 4),
-	(19, 'Chinu', 30, 5.00, 8.00, '2022-01-16', 'apresenta haste menor e curvatura maior. Por isso, é indicado para fisgar peixes que tenham boca menor,', 11, 7, 5),
+	(19, 'Chinu', 30, 5.00, 8.00, '2022-01-16', 'apresenta haste menor e curvatura maior. Por isso, é indicado para fisgar peixes que tenham boca menor.', 9, 4, 1),
 	(20, 'Garateia', 5, 10.00, 20.00, '2022-05-14', 'O anzol é chamado assim quando há três ganchos em uma mesma haste.', 11, 7, 4),
 	(21, 'Barco Semi-chatos', 4, 360.00, 500.00, '2022-11-10', 'eles são ideais para serem usados em águas mais calmas que possuem pequenas ondas, como em algumas represas e rios.', 12, 5, 3),
 	(22, 'Caiaque nemisus', 3, 680.00, 1000.00, '2022-07-14', 'Exigem muita destreza para fazer a pilotagem e manipular os equipamentos ao mesmo tempo, porém, podem proporcionar um contato ímpar com a natureza e com a pescaria', 12, 5, 6),
@@ -335,7 +335,7 @@ CREATE TABLE IF NOT EXISTS `venda` (
   CONSTRAINT `fk_Venda_Funcionario1` FOREIGN KEY (`Funcionario_codFuncionario`) REFERENCES `funcionario` (`codFuncionario`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
--- Copiando dados para a tabela lojapesca.venda: ~1 rows (aproximadamente)
+-- Copiando dados para a tabela lojapesca.venda: ~0 rows (aproximadamente)
 INSERT INTO `venda` (`codVenda`, `tipo`, `comissao`, `desconto`, `dataHoraVenda`, `Cliente_codCliente`, `Funcionario_codFuncionario`) VALUES
 	(1, 'À vista', 15.00, 10.00, '2022-11-10 11:52:10', 1, 1);
 
